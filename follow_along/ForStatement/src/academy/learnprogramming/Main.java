@@ -19,7 +19,6 @@ public class Main {
         return (amount * (interestRate/100));
     }
 
-    @SuppressWarnings("UnusedAssignment")
     public static boolean isPrime(int n) {
         if (n == 1) return false;
 
