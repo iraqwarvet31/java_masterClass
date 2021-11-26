@@ -11,6 +11,9 @@ public class Main {
 
         Point point = new Point();
         System.out.println("distance() = " + point.distance());
+
+        Point third = new Point(1, -1);
+        System.out.println(third.distance());
     }
 }
 

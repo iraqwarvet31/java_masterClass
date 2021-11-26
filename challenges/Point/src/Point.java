@@ -22,18 +22,16 @@ public class Point {
     public void setY(int value) {
         this.y = value;
     }
-    public void test() {
-        System.out.println();
-    }
+
     public double distance() {
-        return Math.sqrt((Math.pow((Math.sqrt(0) - this.x), 2)) + (Math.pow((Math.sqrt(0) - this.y), 2)));
+        return Math.sqrt((-x) * (-x) + (-y) * (-y));
     }
     public double distance(int x, int y) {
-        double result = Math.sqrt(Math.pow((Math.sqrt(x) - this.x), 2) + (Math.pow((Math.sqrt(y) - this.y), 2)));
-        return (int) result;
+        return Math.sqrt((this.x - x) * (this.x - x) + (this.y - y) * (this.y - y));
     }
+
     public double distance(Point p) {
-        double result = Math.sqrt(Math.pow((Math.sqrt(p.getX()) - this.x), 2) + (Math.pow((Math.sqrt(p.getY()) - this.y), 2)));
-        return (int) result;
+        return Math.sqrt((p.x - x) * (p.x - x) + (p.y - y) * (p.y - y));
     }
+
 }
